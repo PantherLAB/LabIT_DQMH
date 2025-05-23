@@ -1,0 +1,4 @@
+12:18:23.967 p. m. 22/05/2025	 Module:"My Singleton Module.lvlib"	 Renamed to-> "Sing.lvlib"
+12:18:43.629 p. m. 22/05/2025	 Module:"My Cloneable Module.lvlib"	 Renamed to-> "Clon.lvlib"
+12:21:55.758 p. m. 22/05/2025	 New Event added to: Sing.lvlib	 Type: Singleton	 Name:Change FP Color	 Type:Request	 Scope:Public Request	 Description: 
+12:56:21.743 p. m. 22/05/2025	 New Event added to: Sing.lvlib	 Type: Singleton	 Name:Cambia de colores los paneles	 Type:Request	 Scope:Public Request	 Description: Cambia de colores los paneles
