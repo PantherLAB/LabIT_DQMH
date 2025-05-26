@@ -78,11 +78,13 @@
 		<Item Name="Constants" Type="Folder">
 			<Item Name="Module Name--constant.vi" Type="VI" URL="../Module Name--constant.vi"/>
 			<Item Name="Module Timeout--constant.vi" Type="VI" URL="../Module Timeout--constant.vi"/>
+			<Item Name="Project Path--constant.vi" Type="VI" URL="../Project Path--constant.vi"/>
 		</Item>
 		<Item Name="Errors" Type="Folder">
 			<Item Name="Module Not Running--error.vi" Type="VI" URL="../Module Not Running--error.vi"/>
 			<Item Name="Module Not Stopped--error.vi" Type="VI" URL="../Module Not Stopped--error.vi"/>
 			<Item Name="Module Not Synced--error.vi" Type="VI" URL="../Module Not Synced--error.vi"/>
+			<Item Name="Motor cant move--error.vi" Type="VI" URL="../Motor cant move--error.vi"/>
 			<Item Name="Request and Wait for Reply Timeout--error.vi" Type="VI" URL="../Request and Wait for Reply Timeout--error.vi"/>
 		</Item>
 		<Item Name="Framework Support" Type="Folder">

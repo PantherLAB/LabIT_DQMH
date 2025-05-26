@@ -1,0 +1,26 @@
+== Modules overview
+
+This project contains 0 singleton module and 1 cloneable module.
+
+.Modules list
+[cols="", %autowidth, frame=all, grid=all, stripes=none]
+|===
+|Singleton |Cloneable
+
+|
+|<<Clon.lvlib>>
+|===
+
+This graph represents the links between all DQMH modules.
+
+[graphviz, format="png", align="center"]
+....
+digraph G_31F97DACE8A24ED191311716B4A7F1FC {
+rankdir=LR;
+edge[dir=none color=aliceblue  arrowhead=box arrowtail=box style=filled penwidth=1 fontcolor=black fontsize=12]
+node[color=black shape=box fontcolor=black fontsize=12]
+"Clon"[label="Clon" color=black shape=component fontcolor=black fontsize=12]
+"External Caller"[label="External Caller" color=skyblue shape=note fontcolor=black fontsize=12]
+"Clon" -> "External Caller" [label=" " dir=both color=goldenrod  arrowhead=normal arrowtail=none style=dashed penwidth=1 fontcolor=black fontsize=12];
+}
+....

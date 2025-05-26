@@ -1,0 +1,9 @@
+10:29:24.865 a. m. 23/05/2025	 New Module added, Name: Clon	 Type: Cloneable	 Description: 
+11:48:31.996 a. m. 23/05/2025	 New Module added, Name: OtroClon	 Type: Cloneable	 Description: 
+11:49:48.244 a. m. 23/05/2025	 Clon.lvlib	Duplicated with the name: "Copia Exacta de Clon.lvlib"
+11:51:04.129 a. m. 23/05/2025	 New Event added to: Clon.lvlib	 Type: Cloneable	 Name:Evento DEmo	 Type:Request	 Scope:Public Request	 Description: 
+11:52:35.411 a. m. 23/05/2025	 New Event added to: OtroClon.lvlib	 Type: Cloneable	 Name:Evento Demo Copia	 Type:Request	 Scope:Public Request	 Description: este es una copia
+_____
+Created using DQMH Framework: Event Scripter 7.1.0.1503.
+11:52:36.229 a. m. 23/05/2025	 Clon.lvlib	 Event: "Evento DEmo"	 Duplicated to: OtroClon.lvlib	 with the name: "Evento Demo Copia"
+12:56:20.665 p. m. 23/05/2025	 New Event added to: OtroClon.lvlib	 Type: Cloneable	 Name:Set Signal Type	 Type:Request	 Scope:Public Request	 Description: Documentacion

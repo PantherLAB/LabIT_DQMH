@@ -1,0 +1,11 @@
+09:44:12.051 a. m. 26/05/2025	 Event:Did Something	 Type: Broadcast	 Removed from: FunctionGenerator.lvlib	 TypeSingleton
+09:44:13.485 a. m. 26/05/2025	 Event:Do Something	 Type: Request	 Removed from: FunctionGenerator.lvlib	 TypeSingleton
+09:44:14.779 a. m. 26/05/2025	 Event:Do Something Else	 Type: Request	 Removed from: FunctionGenerator.lvlib	 TypeSingleton
+09:44:16.043 a. m. 26/05/2025	 Event:Do Something Else and Wait for Reply	 Type: Request and Wait	 Removed from: FunctionGenerator.lvlib	 TypeSingleton
+09:44:18.710 a. m. 26/05/2025	 New Module added, Name: FunctionGenerator	 Type: Singleton	 Description: 
+09:46:23.582 a. m. 26/05/2025	 New Event added to: FunctionGenerator.lvlib	 Type: Singleton	 Name:Set Signal Type	 Type:Request	 Scope:Public Request	 Description: Set Signal Type
+09:54:03.212 a. m. 26/05/2025	 New Event added to: FunctionGenerator.lvlib	 Type: Singleton	 Name:Set Amplitude	 Type:Request	 Scope:Public Request	 Description: Set Amplitude
+09:56:15.763 a. m. 26/05/2025	 New Event added to: FunctionGenerator.lvlib	 Type: Singleton	 Name:Set Frecuency	 Type:Request	 Scope:Public Request	 Description: Set Frecuency
+
+_____
+Created using DQMH Framework: Event Scripter 7.1.0.1503.
