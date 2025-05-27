@@ -22,6 +22,7 @@
 				<Item Name="Show Diagram Argument--cluster.ctl" Type="VI" URL="../Show Diagram Argument--cluster.ctl"/>
 				<Item Name="Update Application Settings Argument--cluster.ctl" Type="VI" URL="../Update Application Settings Argument--cluster.ctl"/>
 				<Item Name="Update Application Settings (Reply Payload)--cluster.ctl" Type="VI" URL="../Update Application Settings (Reply Payload)--cluster.ctl"/>
+				<Item Name="Demo Evento Argument--cluster.ctl" Type="VI" URL="../Demo Evento Argument--cluster.ctl"/>
 			</Item>
 			<Item Name="Broadcast" Type="Folder">
 				<Item Name="Did Init Argument--cluster.ctl" Type="VI" URL="../Did Init Argument--cluster.ctl"/>
@@ -36,6 +37,7 @@
 			<Item Name="Get Module Execution Status.vi" Type="VI" URL="../Get Module Execution Status.vi"/>
 			<Item Name="Show Diagram.vi" Type="VI" URL="../Show Diagram.vi"/>
 			<Item Name="Update Application Settings.vi" Type="VI" URL="../Update Application Settings.vi"/>
+			<Item Name="Demo Evento.vi" Type="VI" URL="../Demo Evento.vi"/>
 		</Item>
 		<Item Name="Start Module.vi" Type="VI" URL="../Start Module.vi"/>
 		<Item Name="Synchronize Module Events.vi" Type="VI" URL="../Synchronize Module Events.vi"/>
