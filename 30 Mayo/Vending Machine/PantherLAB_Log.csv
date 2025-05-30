@@ -1,0 +1,7 @@
+09:23:01.637 a. m. 30/05/2025	 New Module added, Name: MoneyControl	 Type: Singleton	 Description: Use this Module Template to create modules capable of being inserted in subpanel
+09:30:57.224 a. m. 30/05/2025	 New Event added to: MoneyControl.lvlib	 Type: Singleton	 Name:Incrementa Credito	 Type:Request	 Scope:Public Request	 Description: Al detectar el ingreso de monedas y o billetes deberá actualizar el credito, utiliza el credito previo y suma la cantidad ingresada.
+09:35:31.279 a. m. 30/05/2025	 New Event added to: MoneyControl.lvlib	 Type: Singleton	 Name:Credito Actualizado	 Type:Broadcast	 Scope:Public Request	 Description: Este es el broadcast para actualizar el credito.
+09:39:11.800 a. m. 30/05/2025	 New Event added to: MoneyControl.lvlib	 Type: Singleton	 Name:Devuelve dinero	 Type:Request	 Scope:Public Request	 Description: Esta accion es la de cancelar la compra
+09:42:28.376 a. m. 30/05/2025	 New Event added to: MoneyControl.lvlib	 Type: Singleton	 Name:Entrega Cambio	 Type:Request	 Scope:Public Request	 Description: Request para entregar cambio despues de hacer venta
+09:46:44.761 a. m. 30/05/2025	 New Event added to: MoneyControl.lvlib	 Type: Singleton	 Name:Cambio Actualizado	 Type:Broadcast	 Scope:Public Request	 Description: Este es el broadcast para actualizar el Cambio.
+09:50:56.905 a. m. 30/05/2025	 New Event added to: MoneyControl.lvlib	 Type: Singleton	 Name:consulta credito	 Type:Request and Wait for Reply	 Scope:Public Request	 Description: 
