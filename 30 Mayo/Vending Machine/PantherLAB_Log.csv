@@ -17,3 +17,4 @@
 11:35:38.975 a. m. 30/05/2025	 Event:Do Something Else and Wait for Reply	 Type: Request and Wait	 Removed from: ProductControl.lvlib	 TypeSingleton
 11:35:41.693 a. m. 30/05/2025	 New Module added, Name: ProductControl	 Type: Singleton	 Description: 
 11:55:18.179 a. m. 30/05/2025	 New Event added to: ProductControl.lvlib	 Type: Singleton	 Name:Inventario Actualizado	 Type:Broadcast	 Scope:Public Request	 Description: Broadcast para refrescar el inventario cada vez que se modifique
+12:19:07.256 p. m. 30/05/2025	 New Event added to: ProductControl.lvlib	 Type: Singleton	 Name:Vender Producto	 Type:Request	 Scope:Public Request	 Description: 

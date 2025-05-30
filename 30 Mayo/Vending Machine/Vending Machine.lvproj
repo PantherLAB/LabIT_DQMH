@@ -17,11 +17,16 @@
 			<Item Name="ProductControl.lvlib" Type="Library" URL="../Libraries/ProductControl/ProductControl.lvlib"/>
 			<Item Name="UI.lvlib" Type="Library" URL="../Libraries/UI/UI.lvlib"/>
 		</Item>
+		<Item Name="Support" Type="Folder">
+			<Item Name="Launcher Support.lvlib" Type="Library" URL="../Libraries/Launcher Support/Launcher Support.lvlib"/>
+		</Item>
 		<Item Name="Testers" Type="Folder">
 			<Item Name="Test MoneyControl API.vi" Type="VI" URL="../Libraries/MoneyControl/Test MoneyControl API.vi"/>
 			<Item Name="Test ProductControl API.vi" Type="VI" URL="../Libraries/ProductControl/Test ProductControl API.vi"/>
 			<Item Name="Test UI API.vi" Type="VI" URL="../Libraries/UI/Test UI API.vi"/>
 		</Item>
+		<Item Name="inventario.ini" Type="Document" URL="../inventario.ini"/>
+		<Item Name="Launcher.vi" Type="VI" URL="../../Launcher.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="8.6CompatibleGlobalVar.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/config.llb/8.6CompatibleGlobalVar.vi"/>
@@ -74,6 +79,7 @@
 				<Item Name="Not Found Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Not Found Dialog.vi"/>
 				<Item Name="Obtain Semaphore Reference.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/Obtain Semaphore Reference.vi"/>
 				<Item Name="PantherLAB_lib_Message.lvlib" Type="Library" URL="/&lt;vilib&gt;/PantherLAB/Message Module/Libraries/Message/PantherLAB_lib_Message.lvlib"/>
+				<Item Name="Pantherlab_lib_Test Message API.vi" Type="VI" URL="/&lt;vilib&gt;/PantherLAB/Message Module/Libraries/Message/Pantherlab_lib_Test Message API.vi"/>
 				<Item Name="Release Semaphore Reference.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/Release Semaphore Reference.vi"/>
 				<Item Name="Release Semaphore.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/Release Semaphore.vi"/>
 				<Item Name="Release Waiting Procs.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/rendezvs.llb/Release Waiting Procs.vi"/>
@@ -101,7 +107,53 @@
 				<Item Name="Wait at Rendezvous.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/rendezvs.llb/Wait at Rendezvous.vi"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
+			<Item Name="CML Main.vi" Type="VI" URL="../CML Main.vi"/>
 		</Item>
-		<Item Name="Build Specifications" Type="Build"/>
+		<Item Name="Build Specifications" Type="Build">
+			<Item Name="Vending Machine" Type="EXE">
+				<Property Name="App_copyErrors" Type="Bool">true</Property>
+				<Property Name="App_INI_aliasGUID" Type="Str">{D65C86C8-7C69-490C-BE65-FF6A1CEB04A0}</Property>
+				<Property Name="App_INI_GUID" Type="Str">{4208975D-825B-4BAB-8F95-EEF2CBB24872}</Property>
+				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
+				<Property Name="App_serverType" Type="Int">0</Property>
+				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
+				<Property Name="Bld_buildCacheID" Type="Str">{6E86E1BF-1FB3-41C9-AEB7-241E1BFB20E6}</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">Vending Machine</Property>
+				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
+				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
+				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME/Vending Machine</Property>
+				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
+				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
+				<Property Name="Bld_previewCacheID" Type="Str">{3E09CD30-607A-4841-966A-783146B47187}</Property>
+				<Property Name="Bld_version.major" Type="Int">1</Property>
+				<Property Name="Destination[0].destName" Type="Str">Vending Machine.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/Vending Machine/Vending Machine.exe</Property>
+				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
+				<Property Name="Destination[0].type" Type="Str">App</Property>
+				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
+				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/Vending Machine/data</Property>
+				<Property Name="DestinationCount" Type="Int">2</Property>
+				<Property Name="Exe_cmdLineArgs" Type="Bool">true</Property>
+				<Property Name="Source[0].itemID" Type="Str">{6AB8A97A-7FD7-4013-AA11-036BAADECF16}</Property>
+				<Property Name="Source[0].type" Type="Str">Container</Property>
+				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Launcher.vi</Property>
+				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
+				<Property Name="Source[1].type" Type="Str">VI</Property>
+				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[2].itemID" Type="Ref">/My Computer/inventario.ini</Property>
+				<Property Name="Source[2].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="SourceCount" Type="Int">3</Property>
+				<Property Name="TgtF_companyName" Type="Str">PantherLAB</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">Vending Machine</Property>
+				<Property Name="TgtF_internalName" Type="Str">Vending Machine</Property>
+				<Property Name="TgtF_legalCopyright" Type="Str">Copyright 2025 PantherLAB</Property>
+				<Property Name="TgtF_productName" Type="Str">Vending Machine</Property>
+				<Property Name="TgtF_targetfileGUID" Type="Str">{08EC084D-C562-4B3C-9CF7-761F8F92E250}</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">Vending Machine.exe</Property>
+				<Property Name="TgtF_versionIndependent" Type="Bool">true</Property>
+			</Item>
+		</Item>
 	</Item>
 </Project>
