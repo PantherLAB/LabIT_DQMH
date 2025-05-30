@@ -5,3 +5,15 @@
 09:42:28.376 a. m. 30/05/2025	 New Event added to: MoneyControl.lvlib	 Type: Singleton	 Name:Entrega Cambio	 Type:Request	 Scope:Public Request	 Description: Request para entregar cambio despues de hacer venta
 09:46:44.761 a. m. 30/05/2025	 New Event added to: MoneyControl.lvlib	 Type: Singleton	 Name:Cambio Actualizado	 Type:Broadcast	 Scope:Public Request	 Description: Este es el broadcast para actualizar el Cambio.
 09:50:56.905 a. m. 30/05/2025	 New Event added to: MoneyControl.lvlib	 Type: Singleton	 Name:consulta credito	 Type:Request and Wait for Reply	 Scope:Public Request	 Description: 
+10:08:46.008 a. m. 30/05/2025	 Event:Did Something	 Type: Broadcast	 Removed from: UI.lvlib	 TypeSingleton
+10:08:47.485 a. m. 30/05/2025	 Event:Do Something	 Type: Request	 Removed from: UI.lvlib	 TypeSingleton
+10:08:48.894 a. m. 30/05/2025	 Event:Do Something Else	 Type: Request	 Removed from: UI.lvlib	 TypeSingleton
+10:08:50.328 a. m. 30/05/2025	 Event:Do Something Else and Wait for Reply	 Type: Request and Wait	 Removed from: UI.lvlib	 TypeSingleton
+10:08:52.940 a. m. 30/05/2025	 New Module added, Name: UI	 Type: Singleton	 Description: 
+10:43:52.669 a. m. 30/05/2025	 New Event added to: UI.lvlib	 Type: Singleton	 Name:Lanza otros modulos	 Type:Request	 Scope:Private Request	 Description: 
+11:35:34.872 a. m. 30/05/2025	 Event:Did Something	 Type: Broadcast	 Removed from: ProductControl.lvlib	 TypeSingleton
+11:35:36.310 a. m. 30/05/2025	 Event:Do Something	 Type: Request	 Removed from: ProductControl.lvlib	 TypeSingleton
+11:35:37.674 a. m. 30/05/2025	 Event:Do Something Else	 Type: Request	 Removed from: ProductControl.lvlib	 TypeSingleton
+11:35:38.975 a. m. 30/05/2025	 Event:Do Something Else and Wait for Reply	 Type: Request and Wait	 Removed from: ProductControl.lvlib	 TypeSingleton
+11:35:41.693 a. m. 30/05/2025	 New Module added, Name: ProductControl	 Type: Singleton	 Description: 
+11:55:18.179 a. m. 30/05/2025	 New Event added to: ProductControl.lvlib	 Type: Singleton	 Name:Inventario Actualizado	 Type:Broadcast	 Scope:Public Request	 Description: Broadcast para refrescar el inventario cada vez que se modifique
