@@ -1,0 +1,88 @@
+== Classes overview
+
+This project contains 3 classes and 0 interface.
+
+.Classes list
+[cols="", %autowidth, frame=all, grid=all, stripes=none]
+|===
+|Classes |Interfaces
+
+|<<Delacor_lib_QMH_Cloneable Module Admin.lvclass>>
+|
+
+|<<Delacor_lib_QMH_Message Queue.lvclass>>
+|
+
+|<<Delacor_lib_QMH_Module Admin.lvclass>>
+|
+|===
+
+[plantuml, format="svg", align="center"]
+....
+@startuml
+set namespaceSeparator :
+skinparam ClassBackgroundColor #FFFFFF
+skinparam ClassBorderColor #555555
+skinparam ClassFontColor #000000
+skinparam ClassHeaderBackgroundColor #808080
+
+skinparam top to bottom direction
+class "Delacor_lib_QMH_Cloneable Module Admin" {
+{field} -Module ID : I32
+{field} -First? : Boolean
+{field} -Close Master Reference : Boolean
+{static} {method} +Delacor_lib_QMH_Get Close Master Reference()
+{static} {method} +Delacor_lib_QMH_Set Close Master Reference()
+{static} {method} +Delacor_lib_QMH_Get First()
+{static} {method} +Delacor_lib_QMH_Set First()
+{static} {method} +Delacor_lib_QMH_Get Module ID()
+{static} {method} +Delacor_lib_QMH_Set Module ID()
+{static} {method} +Delacor_lib_QMH_Cloneable Admin Class--constant()
+{static} {method} +Delacor_lib_QMH_Cloneable Admin Class--control()
+{method} +Delacor_lib_QMH_Reset()
+
+}
+"Delacor_lib_QMH_Module Admin" <|-- "Delacor_lib_QMH_Cloneable Module Admin"
+
+
+class "Delacor_lib_QMH_Message Queue" {
+{field} -Message Queue : NoType
+{field} -Error Debug : String
+{static} {method} +Delacor_lib_QMH_Get Error Debug()
+{static} {method} +Delacor_lib_QMH_Set Error Debug()
+{static} {method} #Delacor_lib_QMH_Get Message Queue()
+{static} {method} #Delacor_lib_QMH_Set Message Queue()
+{static} {method} +Delacor_lib_QMH_Process Error Variant()
+{static} {method} +Delacor_lib_QMH_Enqueue Message (Array)()
+{static} {method} +Delacor_lib_QMH_Enqueue Message (Single)()
+{static} {method} +Delacor_lib_QMH_Create Message Queue()
+{static} {method} +Delacor_lib_QMH_DQMH Error Tags--constant()
+{static} {method} +Delacor_lib_QMH_Enqueue Message (poly)()
+{method} +Delacor_lib_QMH_Check Loop Error()
+{method} +Delacor_lib_QMH_Error Handler - Event Handling Loop()
+{method} +Delacor_lib_QMH_Error Handler - Message Handling Loop()
+{method} +Delacor_lib_QMH_Error Handler - Helper Loop()
+{method} +Delacor_lib_QMH_Dequeue Message()
+{method} +Delacor_lib_QMH_Flush Messages()
+{method} +Delacor_lib_QMH_Release Message Queue()
+
+}
+
+
+class "Delacor_lib_QMH_Module Admin" {
+{field} -External Launch : Boolean
+{field} -Show Diagram on Init : Boolean
+{static} {method} +Delacor_lib_QMH_Get External Launch()
+{static} {method} +Delacor_lib_QMH_Set External Launch()
+{static} {method} +Delacor_lib_QMH_Admin Class--constant()
+{static} {method} +Delacor_lib_QMH_Admin Class--control()
+{method} +Delacor_lib_QMH_Get Show Diagram on Init()
+{method} +Delacor_lib_QMH_Set Show Diagram on Init()
+{method} +Delacor_lib_QMH_Reset()
+
+}
+
+
+
+@enduml
+....

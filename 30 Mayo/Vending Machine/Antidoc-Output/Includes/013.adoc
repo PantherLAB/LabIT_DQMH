@@ -1,0 +1,225 @@
+== Delacor_lib_QMH_Message Queue.lvclass
+
+*Responsibility:*
+No description found (add content in lvclass description)
+
+*Version:* 1.0.0.0
+
+=== Diagram
+
+[plantuml, format="svg", align="center"]
+....
+@startuml
+set namespaceSeparator :
+skinparam ClassBackgroundColor #FFFFFF
+skinparam ClassBorderColor #555555
+skinparam ClassFontColor #000000
+skinparam ClassHeaderBackgroundColor #808080
+
+skinparam top to bottom direction
+class "Delacor_lib_QMH_Message Queue" {
+{field} -Message Queue : NoType
+{field} -Error Debug : String
+{static} {method} +Delacor_lib_QMH_Get Error Debug()
+{static} {method} +Delacor_lib_QMH_Set Error Debug()
+{static} {method} #Delacor_lib_QMH_Get Message Queue()
+{static} {method} #Delacor_lib_QMH_Set Message Queue()
+{static} {method} +Delacor_lib_QMH_Process Error Variant()
+{static} {method} +Delacor_lib_QMH_Enqueue Message (Array)()
+{static} {method} +Delacor_lib_QMH_Enqueue Message (Single)()
+{static} {method} +Delacor_lib_QMH_Create Message Queue()
+{static} {method} +Delacor_lib_QMH_DQMH Error Tags--constant()
+{static} {method} +Delacor_lib_QMH_Enqueue Message (poly)()
+{method} +Delacor_lib_QMH_Check Loop Error()
+{method} +Delacor_lib_QMH_Error Handler - Event Handling Loop()
+{method} +Delacor_lib_QMH_Error Handler - Message Handling Loop()
+{method} +Delacor_lib_QMH_Error Handler - Helper Loop()
+{method} +Delacor_lib_QMH_Dequeue Message()
+{method} +Delacor_lib_QMH_Flush Messages()
+{method} +Delacor_lib_QMH_Release Message Queue()
+
+}
+
+
+
+@enduml
+....
+
+=== Methods
+
+.Functions (non private scope only)
+[cols="<.<4d,<.<8a,<.<12d,<.<1a,<.<1a,<.<1a", %autowidth, frame=all, grid=all, stripes=none]
+|===
+|Name |Connector pane |Description |S. |R. |I.
+
+|Delacor_lib_QMH_Get Error Debug
+|image:Delacor_lib_QMH_Message_Queue.lvclass_Delacor_lib_QMH_Get_Error_Debug.vi.png[Delacor_lib_QMH_Message Queue.lvclass:Delacor_lib_QMH_Get Error Debug.vi]
+|
+____
+DQMH Framework: Palette 7.1.0.1503
+Copyright (c) 2025, DQMH Consortium
+|image:empty.png[empty.png]
+|image:reentrancy-preallocated.png[reentrancy-preallocated.png]
+|image:inlined.png[inlined.png]
+
+|Delacor_lib_QMH_Set Error Debug
+|image:Delacor_lib_QMH_Message_Queue.lvclass_Delacor_lib_QMH_Set_Error_Debug.vi.png[Delacor_lib_QMH_Message Queue.lvclass:Delacor_lib_QMH_Set Error Debug.vi]
+|
+____
+DQMH Framework: Palette 7.1.0.1503
+Copyright (c) 2025, DQMH Consortium
+|image:empty.png[empty.png]
+|image:reentrancy-preallocated.png[reentrancy-preallocated.png]
+|image:inlined.png[inlined.png]
+
+|Delacor_lib_QMH_Get Message Queue
+|image:Delacor_lib_QMH_Message_Queue.lvclass_Delacor_lib_QMH_Get_Message_Queue.vi.png[Delacor_lib_QMH_Message Queue.lvclass:Delacor_lib_QMH_Get Message Queue.vi]
+|
+____
+DQMH Framework: Palette 7.1.0.1503
+Copyright (c) 2025, DQMH Consortium
+|image:scope-protected.png[scope-protected.png]
+|image:reentrancy-preallocated.png[reentrancy-preallocated.png]
+|image:inlined.png[inlined.png]
+
+|Delacor_lib_QMH_Set Message Queue
+|image:Delacor_lib_QMH_Message_Queue.lvclass_Delacor_lib_QMH_Set_Message_Queue.vi.png[Delacor_lib_QMH_Message Queue.lvclass:Delacor_lib_QMH_Set Message Queue.vi]
+|
+____
+DQMH Framework: Palette 7.1.0.1503
+Copyright (c) 2025, DQMH Consortium
+|image:scope-protected.png[scope-protected.png]
+|image:reentrancy-preallocated.png[reentrancy-preallocated.png]
+|image:inlined.png[inlined.png]
+
+|Delacor_lib_QMH_Check Loop Error
+|image:Delacor_lib_QMH_Message_Queue.lvclass_Delacor_lib_QMH_Check_Loop_Error.vi.png[Delacor_lib_QMH_Message Queue.lvclass:Delacor_lib_QMH_Check Loop Error.vi]
+|Check the 'error to process' to see if its code value matches any of the values in the 'Ignore Errors' array. If so, do nothing. If not, send an "Error" message containing the error data to the Message Handling Loop for further processing.
+____
+DQMH Framework: Palette 7.1.0.1503
+Copyright (c) 2025, DQMH Consortium
+|image:empty.png[empty.png]
+|image:reentrancy-shared.png[reentrancy-shared.png]
+|image:empty.png[empty.png]
+
+|Delacor_lib_QMH_Error Handler - Event Handling Loop
+|image:Delacor_lib_QMH_Message_Queue.lvclass_Delacor_lib_QMH_Error_Handler___Event_Handling_Loop.vi.png[Delacor_lib_QMH_Message Queue.lvclass:Delacor_lib_QMH_Error Handler - Event Handling Loop.vi]
+|Process an error that occurred in the Event Handling Loop, either by ignoring it, or generating an "Error" message.
+____
+DQMH Framework: Palette 7.1.0.1503
+Copyright (c) 2025, DQMH Consortium
+|image:empty.png[empty.png]
+|image:reentrancy-shared.png[reentrancy-shared.png]
+|image:empty.png[empty.png]
+
+|Delacor_lib_QMH_Error Handler - Message Handling Loop
+|image:Delacor_lib_QMH_Message_Queue.lvclass_Delacor_lib_QMH_Error_Handler___Message_Handling_Loop.vi.png[Delacor_lib_QMH_Message Queue.lvclass:Delacor_lib_QMH_Error Handler - Message Handling Loop.vi]
+|Process an error that occurred in the Message Handling Loop, either by ignoring it, or generating an "Error" message.
+____
+DQMH Framework: Palette 7.1.0.1503
+Copyright (c) 2025, DQMH Consortium
+|image:empty.png[empty.png]
+|image:reentrancy-shared.png[reentrancy-shared.png]
+|image:empty.png[empty.png]
+
+|Delacor_lib_QMH_Error Handler - Helper Loop
+|image:Delacor_lib_QMH_Message_Queue.lvclass_Delacor_lib_QMH_Error_Handler___Helper_Loop.vi.png[Delacor_lib_QMH_Message Queue.lvclass:Delacor_lib_QMH_Error Handler - Helper Loop.vi]
+|Process an error that occurred in a Helper Loop, either by ignoring it, or generating an "Error" message.
+____
+DQMH Framework: Palette 7.1.0.1503
+Copyright (c) 2025, DQMH Consortium
+|image:empty.png[empty.png]
+|image:reentrancy-shared.png[reentrancy-shared.png]
+|image:empty.png[empty.png]
+
+|Delacor_lib_QMH_Process Error Variant
+|image:Delacor_lib_QMH_Message_Queue.lvclass_Delacor_lib_QMH_Process_Error_Variant.vi.png[Delacor_lib_QMH_Message Queue.lvclass:Delacor_lib_QMH_Process Error Variant.vi]
+|
+____
+DQMH Framework: Palette 7.1.0.1503
+Copyright (c) 2025, DQMH Consortium
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Delacor_lib_QMH_Enqueue Message (Array)
+|image:Delacor_lib_QMH_Message_Queue.lvclass_Delacor_lib_QMH_Enqueue_Message_(Array).vi.png[Delacor_lib_QMH_Message Queue.lvclass:Delacor_lib_QMH_Enqueue Message (Array).vi]
+|For a regular message, enqueue the message. For a priority message, enqueue it at the front of the queue.
+This is an instance of the polymorphic VI: "Enqueue Message (poly).vi"
+____
+DQMH Framework: Palette 7.1.0.1503
+Copyright (c) 2025, DQMH Consortium
+|image:empty.png[empty.png]
+|image:reentrancy-shared.png[reentrancy-shared.png]
+|image:inlined.png[inlined.png]
+
+|Delacor_lib_QMH_Enqueue Message (Single)
+|image:Delacor_lib_QMH_Message_Queue.lvclass_Delacor_lib_QMH_Enqueue_Message_(Single).vi.png[Delacor_lib_QMH_Message Queue.lvclass:Delacor_lib_QMH_Enqueue Message (Single).vi]
+|For a regular message, enqueue the message. For a priority message, enqueue it at the front of the queue.
+This is an instance of the polymorphic VI: "Enqueue Message (poly).vi"
+____
+DQMH Framework: Palette 7.1.0.1503
+Copyright (c) 2025, DQMH Consortium
+|image:empty.png[empty.png]
+|image:reentrancy-shared.png[reentrancy-shared.png]
+|image:inlined.png[inlined.png]
+
+|Delacor_lib_QMH_Create Message Queue
+|image:Delacor_lib_QMH_Message_Queue.lvclass_Delacor_lib_QMH_Create_Message_Queue.vi.png[Delacor_lib_QMH_Message Queue.lvclass:Delacor_lib_QMH_Create Message Queue.vi]
+|This VI creates and initializes the message queue for a QMH Module. 
+If the message needs to be different for the given module, then create a child class of Message Queue and override the appropriate methods.
+____
+DQMH Framework: Palette 7.1.0.1503
+Copyright (c) 2025, DQMH Consortium
+|image:empty.png[empty.png]
+|image:reentrancy-shared.png[reentrancy-shared.png]
+|image:empty.png[empty.png]
+
+|Delacor_lib_QMH_Dequeue Message
+|image:Delacor_lib_QMH_Message_Queue.lvclass_Delacor_lib_QMH_Dequeue_Message.vi.png[Delacor_lib_QMH_Message Queue.lvclass:Delacor_lib_QMH_Dequeue Message.vi]
+|This VI pulls messages off the Message Queue.
+____
+DQMH Framework: Palette 7.1.0.1503
+Copyright (c) 2025, DQMH Consortium
+|image:empty.png[empty.png]
+|image:reentrancy-shared.png[reentrancy-shared.png]
+|image:empty.png[empty.png]
+
+|Delacor_lib_QMH_Flush Messages
+|image:Delacor_lib_QMH_Message_Queue.lvclass_Delacor_lib_QMH_Flush_Messages.vi.png[Delacor_lib_QMH_Message Queue.lvclass:Delacor_lib_QMH_Flush Messages.vi]
+|Flush the message queue.
+____
+DQMH Framework: Palette 7.1.0.1503
+Copyright (c) 2025, DQMH Consortium
+|image:empty.png[empty.png]
+|image:reentrancy-shared.png[reentrancy-shared.png]
+|image:empty.png[empty.png]
+
+|Delacor_lib_QMH_Release Message Queue
+|image:Delacor_lib_QMH_Message_Queue.lvclass_Delacor_lib_QMH_Release_Message_Queue.vi.png[Delacor_lib_QMH_Message Queue.lvclass:Delacor_lib_QMH_Release Message Queue.vi]
+|Release the message queue.
+____
+DQMH Framework: Palette 7.1.0.1503
+Copyright (c) 2025, DQMH Consortium
+|image:empty.png[empty.png]
+|image:reentrancy-shared.png[reentrancy-shared.png]
+|image:empty.png[empty.png]
+|===
+
+**S**cope: image:scope-protected.png[] -> Protected | image:scope-community.png[] -> Community
+
+**R**eentrancy: image:reentrancy-preallocated.png[] -> Preallocated reentrancy | image:reentrancy-shared.png[] -> Shared reentrancy
+
+**I**nlining: image:inlined.png[] -> Inlined
+
+=== Class Constant VIs
+
+.Constant VIs Found
+[cols="<.<3d,<.<3d,<.<6d", %autowidth, frame=all, grid=all, stripes=none]
+|===
+|VI Name |Data Type |Value
+
+|Delacor_lib_QMH_DQMH Error Tags--constant.vi
+|["String","String"]
+|["<DQMH>","</DQMH>"]
+|===

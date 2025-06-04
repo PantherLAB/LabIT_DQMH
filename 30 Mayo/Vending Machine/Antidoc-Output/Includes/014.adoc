@@ -1,0 +1,122 @@
+== Delacor_lib_QMH_Module Admin.lvclass
+
+*Responsibility:*
+No description found (add content in lvclass description)
+
+*Version:* 1.0.0.0
+
+=== Diagram
+
+[plantuml, format="svg", align="center"]
+....
+@startuml
+set namespaceSeparator :
+skinparam ClassBackgroundColor #FFFFFF
+skinparam ClassBorderColor #555555
+skinparam ClassFontColor #000000
+skinparam ClassHeaderBackgroundColor #808080
+
+skinparam top to bottom direction
+class "Delacor_lib_QMH_Module Admin" {
+{field} -External Launch : Boolean
+{field} -Show Diagram on Init : Boolean
+{static} {method} +Delacor_lib_QMH_Get External Launch()
+{static} {method} +Delacor_lib_QMH_Set External Launch()
+{static} {method} +Delacor_lib_QMH_Admin Class--constant()
+{static} {method} +Delacor_lib_QMH_Admin Class--control()
+{method} +Delacor_lib_QMH_Get Show Diagram on Init()
+{method} +Delacor_lib_QMH_Set Show Diagram on Init()
+{method} +Delacor_lib_QMH_Reset()
+
+}
+
+
+
+@enduml
+....
+
+=== Methods
+
+.Functions (non private scope only)
+[cols="<.<4d,<.<8a,<.<12d,<.<1a,<.<1a,<.<1a", %autowidth, frame=all, grid=all, stripes=none]
+|===
+|Name |Connector pane |Description |S. |R. |I.
+
+|Delacor_lib_QMH_Get External Launch
+|image:Delacor_lib_QMH_Module_Admin.lvclass_Delacor_lib_QMH_Get_External_Launch.vi.png[Delacor_lib_QMH_Module Admin.lvclass:Delacor_lib_QMH_Get External Launch.vi]
+|
+____
+DQMH Framework: Palette 7.1.0.1503
+Copyright (c) 2025, DQMH Consortium
+|image:empty.png[empty.png]
+|image:reentrancy-preallocated.png[reentrancy-preallocated.png]
+|image:inlined.png[inlined.png]
+
+|Delacor_lib_QMH_Set External Launch
+|image:Delacor_lib_QMH_Module_Admin.lvclass_Delacor_lib_QMH_Set_External_Launch.vi.png[Delacor_lib_QMH_Module Admin.lvclass:Delacor_lib_QMH_Set External Launch.vi]
+|
+____
+DQMH Framework: Palette 7.1.0.1503
+Copyright (c) 2025, DQMH Consortium
+|image:empty.png[empty.png]
+|image:reentrancy-preallocated.png[reentrancy-preallocated.png]
+|image:inlined.png[inlined.png]
+
+|Delacor_lib_QMH_Get Show Diagram on Init
+|image:Delacor_lib_QMH_Module_Admin.lvclass_Delacor_lib_QMH_Get_Show_Diagram_on_Init.vi.png[Delacor_lib_QMH_Module Admin.lvclass:Delacor_lib_QMH_Get Show Diagram on Init.vi]
+|
+____
+DQMH Framework: Palette 7.1.0.1503
+Copyright (c) 2025, DQMH Consortium
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Delacor_lib_QMH_Set Show Diagram on Init
+|image:Delacor_lib_QMH_Module_Admin.lvclass_Delacor_lib_QMH_Set_Show_Diagram_on_Init.vi.png[Delacor_lib_QMH_Module Admin.lvclass:Delacor_lib_QMH_Set Show Diagram on Init.vi]
+|
+____
+DQMH Framework: Palette 7.1.0.1503
+Copyright (c) 2025, DQMH Consortium
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Delacor_lib_QMH_Admin Class--control
+|image:Delacor_lib_QMH_Module_Admin.lvclass_Delacor_lib_QMH_Admin_Class__control.vi.png[Delacor_lib_QMH_Module Admin.lvclass:Delacor_lib_QMH_Admin Class--control.vi]
+|
+____
+DQMH Framework: Palette 7.1.0.1503
+Copyright (c) 2025, DQMH Consortium
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Delacor_lib_QMH_Reset
+|image:Delacor_lib_QMH_Module_Admin.lvclass_Delacor_lib_QMH_Reset.vi.png[Delacor_lib_QMH_Module Admin.lvclass:Delacor_lib_QMH_Reset.vi]
+|
+____
+DQMH Framework: Palette 7.1.0.1503
+Copyright (c) 2025, DQMH Consortium
+|image:empty.png[empty.png]
+|image:reentrancy-shared.png[reentrancy-shared.png]
+|image:empty.png[empty.png]
+|===
+
+**S**cope: image:scope-protected.png[] -> Protected | image:scope-community.png[] -> Community
+
+**R**eentrancy: image:reentrancy-preallocated.png[] -> Preallocated reentrancy | image:reentrancy-shared.png[] -> Shared reentrancy
+
+**I**nlining: image:inlined.png[] -> Inlined
+
+=== Class Constant VIs
+
+.Constant VIs Found
+[cols="<.<3d,<.<3d,<.<6d", %autowidth, frame=all, grid=all, stripes=none]
+|===
+|VI Name |Data Type |Value
+
+|Delacor_lib_QMH_Admin Class--constant.vi
+|LabVIEW Class Instance
+|Delacor_lib_QMH_Module Admin.lvclass
+|===

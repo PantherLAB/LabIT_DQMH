@@ -1,0 +1,167 @@
+== NI_LVConfig.lvlib
+
+*Responsibility:*
+No description found (add content in lvlib description)
+
+*Version:* 1.0.0.0
+
+=== Functions
+
+.Functions (non private scope only)
+[cols="<.<4d,<.<8a,<.<12d,<.<1a,<.<1a,<.<1a", %autowidth, frame=all, grid=all, stripes=none]
+|===
+|Name |Connector pane |Description |S. |R. |I.
+
+|Close Config Data
+|image:NI_LVConfig.lvlib_Close_Config_Data.vi.png[NI_LVConfig.lvlib:Close Config Data.vi]
+|<p>Writes data to the platform-independent configuration file identified by <strong>refnum</strong> and then closes the reference to that file.</p>
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Not A Config Data Refnum
+|image:NI_LVConfig.lvlib_Not_A_Config_Data_Refnum.vi.png[NI_LVConfig.lvlib:Not A Config Data Refnum.vi]
+|<p>Determines whether a configuration data refnum is valid.</p>
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Open Config Data (compatibility)
+|image:NI_LVConfig.lvlib_Open_Config_Data_(compatibility).vi.png[NI_LVConfig.lvlib:Open Config Data (compatibility).vi]
+|The Open Config Data VI was rewritten with one new output in LabVIEW 2009 and later. Replace the Open Config Data (compatibility) VI with an Open Config Data VI from the Functions palette to use the new functionality.
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Open Config Data
+|image:NI_LVConfig.lvlib_Open_Config_Data.vi.png[NI_LVConfig.lvlib:Open Config Data.vi]
+|<p>Opens a reference to the configuration data found in a platform-independent configuration file.</p>
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Get Key Names
+|image:NI_LVConfig.lvlib_Get_Key_Names.vi.png[NI_LVConfig.lvlib:Get Key Names.vi]
+|<p>Gets the names of all keys in the specified section from the configuration data identified by <strong>refnum</strong>.</p>
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Get Section Names
+|image:NI_LVConfig.lvlib_Get_Section_Names.vi.png[NI_LVConfig.lvlib:Get Section Names.vi]
+|<p>Gets the names of all sections from the configuration data identified by <strong>refnum</strong>.</p>
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Read Key (Boolean)
+|image:NI_LVConfig.lvlib_Read_Key_(Boolean).vi.png[NI_LVConfig.lvlib:Read Key (Boolean).vi]
+|<p>Reads a value associated with a key in a specified section from the configuration data identified by <strong>refnum</strong>. If the key does not exist, the VI returns the default value. This VI supports multibyte characters in strings. Wire data to the <strong>default value</strong> input to determine the polymorphic instance to use or <a href="nihelplauncher://docs/csh?context=lvcore_lvhowto_selectingdefaultinstpolyvi">manually select</a> the instance.</p>
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Read Key (Double)
+|image:NI_LVConfig.lvlib_Read_Key_(Double).vi.png[NI_LVConfig.lvlib:Read Key (Double).vi]
+|<p>Reads a value associated with a key in a specified section from the configuration data identified by <strong>refnum</strong>. If the key does not exist, the VI returns the default value. This VI supports multibyte characters in strings. Wire data to the <strong>default value</strong> input to determine the polymorphic instance to use or <a href="nihelplauncher://docs/csh?context=lvcore_lvhowto_selectingdefaultinstpolyvi">manually select</a> the instance.</p>
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Read Key (I32)
+|image:NI_LVConfig.lvlib_Read_Key_(I32).vi.png[NI_LVConfig.lvlib:Read Key (I32).vi]
+|<p>Reads a value associated with a key in a specified section from the configuration data identified by <strong>refnum</strong>. If the key does not exist, the VI returns the default value. This VI supports multibyte characters in strings. Wire data to the <strong>default value</strong> input to determine the polymorphic instance to use or <a href="nihelplauncher://docs/csh?context=lvcore_lvhowto_selectingdefaultinstpolyvi">manually select</a> the instance.</p>
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Read Key (Path)
+|image:NI_LVConfig.lvlib_Read_Key_(Path).vi.png[NI_LVConfig.lvlib:Read Key (Path).vi]
+|<p>Reads a value associated with a key in a specified section from the configuration data identified by <strong>refnum</strong>. If the key does not exist, the VI returns the default value. This VI supports multibyte characters in strings. Wire data to the <strong>default value</strong> input to determine the polymorphic instance to use or <a href="nihelplauncher://docs/csh?context=lvcore_lvhowto_selectingdefaultinstpolyvi">manually select</a> the instance.</p>
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Read Key (String)
+|image:NI_LVConfig.lvlib_Read_Key_(String).vi.png[NI_LVConfig.lvlib:Read Key (String).vi]
+|<p>Reads a value associated with a key in a specified section from the configuration data identified by <strong>refnum</strong>. If the key does not exist, the VI returns the default value. This VI supports multibyte characters in strings. Wire data to the <strong>default value</strong> input to determine the polymorphic instance to use or <a href="nihelplauncher://docs/csh?context=lvcore_lvhowto_selectingdefaultinstpolyvi">manually select</a> the instance.</p>
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Read Key (U32)
+|image:NI_LVConfig.lvlib_Read_Key_(U32).vi.png[NI_LVConfig.lvlib:Read Key (U32).vi]
+|<p>Reads a value associated with a key in a specified section from the configuration data identified by <strong>refnum</strong>. If the key does not exist, the VI returns the default value. This VI supports multibyte characters in strings. Wire data to the <strong>default value</strong> input to determine the polymorphic instance to use or <a href="nihelplauncher://docs/csh?context=lvcore_lvhowto_selectingdefaultinstpolyvi">manually select</a> the instance.</p>
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Remove Key
+|image:NI_LVConfig.lvlib_Remove_Key.vi.png[NI_LVConfig.lvlib:Remove Key.vi]
+|<p>Removes a <strong>key</strong> in a specified section from the configuration data identified by <strong>refnum</strong>.</p>
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Remove Section
+|image:NI_LVConfig.lvlib_Remove_Section.vi.png[NI_LVConfig.lvlib:Remove Section.vi]
+|<p>Removes a section from the configuration data identified by <strong>refnum</strong>.</p>
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Write Key (Boolean)
+|image:NI_LVConfig.lvlib_Write_Key_(Boolean).vi.png[NI_LVConfig.lvlib:Write Key (Boolean).vi]
+|<p>Writes a value to a key in a specified section of the configuration data identified by <strong>refnum</strong>. This VI modifies data in memory. To write data to disk, use the <a href="nihelplauncher://docs/csh?context=lvcore_glang_close_config_data">Close Config Data</a> VI. Wire data to the <strong>value</strong> input to determine the polymorphic instance to use or <a href="nihelplauncher://docs/csh?context=lvcore_lvhowto_selectingdefaultinstpolyvi">manually select</a> the instance.</p>
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Write Key (Double)
+|image:NI_LVConfig.lvlib_Write_Key_(Double).vi.png[NI_LVConfig.lvlib:Write Key (Double).vi]
+|<p>Writes a value to a key in a specified section of the configuration data identified by <strong>refnum</strong>. This VI modifies data in memory. To write data to disk, use the <a href="nihelplauncher://docs/csh?context=lvcore_glang_close_config_data">Close Config Data</a> VI. Wire data to the <strong>value</strong> input to determine the polymorphic instance to use or <a href="nihelplauncher://docs/csh?context=lvcore_lvhowto_selectingdefaultinstpolyvi">manually select</a> the instance.</p>
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Write Key (I32)
+|image:NI_LVConfig.lvlib_Write_Key_(I32).vi.png[NI_LVConfig.lvlib:Write Key (I32).vi]
+|<p>Writes a value to a key in a specified section of the configuration data identified by <strong>refnum</strong>. This VI modifies data in memory. To write data to disk, use the <a href="nihelplauncher://docs/csh?context=lvcore_glang_close_config_data">Close Config Data</a> VI. Wire data to the <strong>value</strong> input to determine the polymorphic instance to use or <a href="nihelplauncher://docs/csh?context=lvcore_lvhowto_selectingdefaultinstpolyvi">manually select</a> the instance.</p>
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Write Key (Path)
+|image:NI_LVConfig.lvlib_Write_Key_(Path).vi.png[NI_LVConfig.lvlib:Write Key (Path).vi]
+|<p>Writes a value to a key in a specified section of the configuration data identified by <strong>refnum</strong>. This VI modifies data in memory. To write data to disk, use the <a href="nihelplauncher://docs/csh?context=lvcore_glang_close_config_data">Close Config Data</a> VI. Wire data to the <strong>value</strong> input to determine the polymorphic instance to use or <a href="nihelplauncher://docs/csh?context=lvcore_lvhowto_selectingdefaultinstpolyvi">manually select</a> the instance.</p>
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Write Key (String)
+|image:NI_LVConfig.lvlib_Write_Key_(String).vi.png[NI_LVConfig.lvlib:Write Key (String).vi]
+|<p>Writes a value to a key in a specified section of the configuration data identified by <strong>refnum</strong>. This VI modifies data in memory. To write data to disk, use the <a href="nihelplauncher://docs/csh?context=lvcore_glang_close_config_data">Close Config Data</a> VI. Wire data to the <strong>value</strong> input to determine the polymorphic instance to use or <a href="nihelplauncher://docs/csh?context=lvcore_lvhowto_selectingdefaultinstpolyvi">manually select</a> the instance.</p>
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Write Key (U32)
+|image:NI_LVConfig.lvlib_Write_Key_(U32).vi.png[NI_LVConfig.lvlib:Write Key (U32).vi]
+|<p>Writes a value to a key in a specified section of the configuration data identified by <strong>refnum</strong>. This VI modifies data in memory. To write data to disk, use the <a href="nihelplauncher://docs/csh?context=lvcore_glang_close_config_data">Close Config Data</a> VI. Wire data to the <strong>value</strong> input to determine the polymorphic instance to use or <a href="nihelplauncher://docs/csh?context=lvcore_lvhowto_selectingdefaultinstpolyvi">manually select</a> the instance.</p>
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|===
+
+**S**cope: image:scope-protected.png[] -> Protected | image:scope-community.png[] -> Community
+
+**R**eentrancy: image:reentrancy-preallocated.png[] -> Preallocated reentrancy | image:reentrancy-shared.png[] -> Shared reentrancy
+
+**I**nlining: image:inlined.png[] -> Inlined
+
+=== Library Constant VIs
+
+[NOTE]
+====
+No Constant VIs Found
+====

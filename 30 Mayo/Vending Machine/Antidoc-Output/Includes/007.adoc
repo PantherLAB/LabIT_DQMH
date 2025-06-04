@@ -1,0 +1,53 @@
+== Launcher Support.lvlib
+
+*Responsibility:*
+No description found (add content in lvlib description)
+
+*Version:* 1.0.0.0
+
+=== Functions
+
+.Functions (non private scope only)
+[cols="<.<4d,<.<8a,<.<12d,<.<1a,<.<1a,<.<1a", %autowidth, frame=all, grid=all, stripes=none]
+|===
+|Name |Connector pane |Description |S. |R. |I.
+
+|Determine if Running in Debug Mode
+|image:Launcher_Support.lvlib_Determine_if_Running_in_Debug_Mode.vi.png[Launcher Support.lvlib:Determine if Running in Debug Mode.vi]
+|The launcher VI is meant to be run as a headless launcher for the module main VI. The launcher VI can be used as a debugging tool.
+
+This VI determines if the launcher VI is running as a debugger by parsing the command line arguments or checking if the VI is running in development mode and sets the Launcher VI properties accordingly.
+
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Pre-Build Action
+|image:Launcher_Support.lvlib_Pre_Build_Action.vi.png[Launcher Support.lvlib:Pre-Build Action.vi]
+|This Pre-Build Action VI sets the Debug mode to false to ensure the top level VI has the headless properties at build time.
+
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Set VI Properties for Debugging Mode
+|image:Launcher_Support.lvlib_Set_VI_Properties_for_Debugging_Mode.vi.png[Launcher Support.lvlib:Set VI Properties for Debugging Mode.vi]
+|This VI sets the properties of the VI Launcher to either headless or debugging mode.
+
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|===
+
+**S**cope: image:scope-protected.png[] -> Protected | image:scope-community.png[] -> Community
+
+**R**eentrancy: image:reentrancy-preallocated.png[] -> Preallocated reentrancy | image:reentrancy-shared.png[] -> Shared reentrancy
+
+**I**nlining: image:inlined.png[] -> Inlined
+
+=== Library Constant VIs
+
+[NOTE]
+====
+No Constant VIs Found
+====

@@ -1,0 +1,44 @@
+== Modules overview
+
+This project contains 3 singleton modules and 1 cloneable module.
+
+.Modules list
+[cols="", %autowidth, frame=all, grid=all, stripes=none]
+|===
+|Singleton |Cloneable
+
+|<<MoneyControl.lvlib>>
+|<<PantherLAB_lib_Message.lvlib>>
+
+|<<ProductControl.lvlib>>
+|
+
+|<<UI.lvlib>>
+|
+|===
+
+This graph represents the links between all DQMH modules.
+
+[graphviz, format="png", align="center"]
+....
+digraph G_D2023546A1894173917B67518F64BAE5 {
+rankdir=LR;
+edge[dir=none color=aliceblue  arrowhead=box arrowtail=box style=filled penwidth=1 fontcolor=black fontsize=12]
+node[color=black shape=box fontcolor=black fontsize=12]
+"Launcher"[label="Launcher" color=skyblue shape=note fontcolor=black fontsize=12]
+"MoneyControl"[label="MoneyControl" color=black shape=component fontcolor=black fontsize=12]
+"PantherLAB_lib_Message"[label="PantherLAB_lib_Message" color=black shape=component fontcolor=black fontsize=12]
+"Pantherlab_lib_Test Message API"[label="Pantherlab_lib_Test Message API" color=skyblue shape=note fontcolor=black fontsize=12]
+"ProductControl"[label="ProductControl" color=black shape=component fontcolor=black fontsize=12]
+"UI"[label="UI" color=black shape=component fontcolor=black fontsize=12]
+"Launcher" -> "UI" [label="    " dir=both color=forestgreen  arrowhead=normal arrowtail=none style=filled penwidth=1 fontcolor=black fontsize=12];
+"UI" -> "PantherLAB_lib_Message" [label="    " dir=both color=forestgreen  arrowhead=normal arrowtail=none style=filled penwidth=1 fontcolor=black fontsize=12];
+"UI" -> "Launcher" [label=" " dir=both color=goldenrod  arrowhead=normal arrowtail=none style=dashed penwidth=1 fontcolor=black fontsize=12];
+"Pantherlab_lib_Test Message API" -> "PantherLAB_lib_Message" [label="    " dir=both color=forestgreen  arrowhead=normal arrowtail=none style=filled penwidth=1 fontcolor=black fontsize=12];
+"UI" -> "ProductControl" [label="    " dir=both color=forestgreen  arrowhead=normal arrowtail=none style=filled penwidth=1 fontcolor=black fontsize=12];
+"UI" -> "MoneyControl" [label="    " dir=both color=forestgreen  arrowhead=normal arrowtail=vee style=filled penwidth=1 fontcolor=black fontsize=12];
+"MoneyControl" -> "UI" [label=" " dir=both color=goldenrod  arrowhead=normal arrowtail=none style=dashed penwidth=1 fontcolor=black fontsize=12];
+"UI" -> "UI" [label="    " dir=both color=forestgreen  arrowhead=normal arrowtail=none style=filled penwidth=1 fontcolor=black fontsize=12];
+"ProductControl" -> "UI" [label=" " dir=both color=goldenrod  arrowhead=normal arrowtail=none style=dashed penwidth=1 fontcolor=black fontsize=12];
+}
+....

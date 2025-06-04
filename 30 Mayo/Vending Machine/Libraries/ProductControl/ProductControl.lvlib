@@ -1,5 +1,6 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
 <Library LVVersion="24008000">
+	<Property Name="NI.Lib.Description" Type="Str">Manejador de Productos</Property>
 	<Property Name="NI.Lib.Icon" Type="Bin">*!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!)P!!!*Q(C=\&gt;8.&lt;6J"&amp;-8R1_2&amp;NK3#C":O#V11C2;OVVGR^=?'!LQZECOA"6KY,&gt;!#,4D`'6]ZFE8-*IGCS0-9`$DT^70?YVG;Z&lt;.UJ;&gt;,Z@O\J&gt;NHP_@/0]^?NY`8G\@TYX`2@G;3]_XHVX`(@[(IIXS5`\P=80Q2`0(@Q5,D151NKKF*$9VFHYK]S)O]S)O]S%VO=J/&lt;X/1G4`)E4`)E4`)E$`)A$`)A$`)AHQ?ZS%5O=ED&amp;YM6#R;4&amp;"%6H+#L?#E`B+4S&amp;BY]K0)7H]"3?QE-8&amp;:\#5XA+4_&amp;BG!J0Y3E]B;@Q-.75V$T)]21?JJ@R')`R')`RM+3-RQ$-9G:C-QE-G5:T9DT'9TS=SHC-RXC-RXBIFP%9D`%9D`%Q:/[+JW9=Z(C92IEH]33?R*.YG&amp;K**`%EHM34?&amp;B/C3@R*)BEQ72S#%I'*2W3$YEH]@"(C3@R**\%EXBIGF=IZ]Y-T4D)]13?Q".Y!E`A91I&amp;HM!4?!*0Y'&amp;;":\!%XA#4_"B+17?Q".Y!ECQ+-MLG#Q9'(1+AM$$;^YN-;_3JS4G)@8.K\YJV4?&lt;_C:3XRTKC[[_G/K,J.Z]^;;K.UO^#?IPJU;L-?J&amp;V).(2ZVY0V)0V$VV2^V3.^1V&gt;56&gt;DK'`O?0J&gt;.,R?.4B=."_P^&gt;ON^.WO^6GM^&amp;[P&gt;:KN&gt;*SO8RZ$(TF?(EA0$_8&lt;DC`@\R?X(V\O,V`@,C^_T,K^7,E@_(`]T`Q&lt;.1HP6[$0@I"A4K"E1!!!!!</Property>
 	<Property Name="NI.Lib.SourceVersion" Type="Int">604012544</Property>
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>

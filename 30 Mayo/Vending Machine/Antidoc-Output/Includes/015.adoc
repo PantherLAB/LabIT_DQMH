@@ -1,0 +1,63 @@
+== Custom errors
+
+[TIP]
+====
+Custom errors are added via vi named `*--error.vi`.
+====
+
+.Custom errors
+[cols="<.<3d,<.<2d,<.<7d,<.<4d", %autowidth, frame=all, grid=all, stripes=none]
+|===
+|Name |Code |Description |Owned by
+
+|Module Not Running
+|0
+|
+|<<MoneyControl.lvlib>> +
+<<ProductControl.lvlib>> +
+<<UI.lvlib>>
+
+|Module Running as Singleton
+|403680
+|The "%s" module is currently running as singleton, but the Start Module VI was called with 'Run as Singleton' specified as FALSE.
+|<<PantherLAB_lib_Message.lvlib>>
+
+|Module Not Stopped
+|403682
+|The Stop Module VI for the %s module timed out while waiting for the module main VI to stop. The module main VI may still be running.
+|<<MoneyControl.lvlib>> +
+<<ProductControl.lvlib>> +
+<<UI.lvlib>> +
+<<PantherLAB_lib_Message.lvlib>>
+
+|Module Not Synced
+|403683
+|%s Module was unable to synchronize events.
+|<<MoneyControl.lvlib>> +
+<<ProductControl.lvlib>> +
+<<UI.lvlib>> +
+<<PantherLAB_lib_Message.lvlib>>
+
+|Module Not Running
+|403684
+|Not a single instance of "%s" Module running.
+|<<PantherLAB_lib_Message.lvlib>>
+
+|Module Running as Cloneable
+|403685
+|The "%s" module is currently running as cloneable, but the Start Module VI was called with 'Run as Singleton' specified as TRUE.
+|<<PantherLAB_lib_Message.lvlib>>
+
+|Request and Wait for Reply Timeout
+|403686
+|
+|<<MoneyControl.lvlib>> +
+<<ProductControl.lvlib>> +
+<<UI.lvlib>> +
+<<PantherLAB_lib_Message.lvlib>>
+
+|Master Reference Not Closed
+|403687
+|The "%s" module cannot be run as singleton because the Master Reference is still open from a prior run as cloneable. If you plan on running this module as both singleton and cloneable, consider changing your Main VI to wire a value of TRUE to the 'Close Master Reference' input of Init Module.vi.
+|<<PantherLAB_lib_Message.lvlib>>
+|===

@@ -1,0 +1,378 @@
+== PantherLAB_lib_Message.lvlib
+
+*Type:* Cloneable
+
+*Responsibility:*
+No description found (add content in DQMH module lvlib description)
+
+=== Module relationship
+
+[graphviz, format="png", align="center"]
+....
+digraph G_F686D614E5D74AE585653B9852911242 {
+rankdir=LR;
+edge[dir=none color=aliceblue  arrowhead=box arrowtail=box style=filled penwidth=1 fontcolor=black fontsize=12]
+node[color=black shape=box fontcolor=black fontsize=12]
+"PantherLAB_lib_Message"[label="PantherLAB_lib_Message" color=slateblue shape=component fontcolor=black fontsize=12]
+"Pantherlab_lib_Test Message API"[label="Pantherlab_lib_Test Message API" color=skyblue shape=note fontcolor=black fontsize=12]
+"UI"[label="UI" color=black shape=component fontcolor=black fontsize=12]
+"UI" -> "PantherLAB_lib_Message" [label="    " dir=both color=forestgreen  arrowhead=normal arrowtail=none style=filled penwidth=1 fontcolor=black fontsize=12];
+"Pantherlab_lib_Test Message API" -> "PantherLAB_lib_Message" [label="    " dir=both color=forestgreen  arrowhead=normal arrowtail=none style=filled penwidth=1 fontcolor=black fontsize=12];
+}
+....
+
+.Requests callers
+[cols="", %autowidth, frame=all, grid=all, stripes=none]
+|===
+|Request Name |Callers
+
+|Display Message
+|Pantherlab_lib_Test Message API.vi +
+UI.lvlib:Main.vi
+
+|Draw FP in Subpanel
+|Pantherlab_lib_Test Message API.vi +
+UI.lvlib:Main.vi
+
+|Hide Panel
+|Pantherlab_lib_Test Message API.vi
+
+|Remove from Subpanel
+|Pantherlab_lib_Test Message API.vi
+
+|Set Blinking
+|Pantherlab_lib_Test Message API.vi
+
+|Set Display Style
+|Pantherlab_lib_Test Message API.vi
+
+|Set Text Colors
+|Pantherlab_lib_Test Message API.vi
+
+|Set Text Font Settings
+|Pantherlab_lib_Test Message API.vi
+
+|Show Diagram
+|Pantherlab_lib_Test Message API.vi
+
+|Show Panel
+|Pantherlab_lib_Test Message API.vi
+|===
+
+.Broadcasts Listeners
+[cols="", %autowidth, frame=all, grid=all, stripes=none]
+|===
+|Broadcast Name |Listeners
+
+|Error Reported
+|
+
+|Module Did Init
+|
+
+|Module Did Stop
+|
+
+|Status Updated
+|
+
+|Update Module Execution Status
+|
+|===
+
+.Used requests
+[cols="", %autowidth, frame=all, grid=all, stripes=none]
+|===
+|Module |Requests
+
+|--
+|--
+|===
+
+.Registered broadcast
+[cols="", %autowidth, frame=all, grid=all, stripes=none]
+|===
+|Module |Broadcasts
+
+|--
+|--
+|===
+
+=== Event list
+
+.Events
+[cols="<.<4d,^.<1a,^.<8a,<.<12d,^.<1a,^.<1a,<.<1a", %autowidth, frame=all, grid=all, stripes=none]
+|===
+|Name |Type |Connector pane |Description |S. |R. |I.
+
+|Start Module
+|image:empty.png[empty.png]
+|image:PantherLAB_lib_Message.lvlib_Start_Module.vi.png[PantherLAB_lib_Message.lvlib:Start Module.vi]
+|Launches an instance of the module Main VI. After calling this VI, you can optionally register for broadcast events from the module by wiring the broadcast events output of this VI to a **Register For Events** function. 
+
+After the optional Register For Events function call, you should always call the **Synchronize Module Events.vi** for this module with the 'Wait for Event Sync?' output of this VI to the corresponding input of the Synchronize Module Events.vi. 
+
+To see an example of the proper wiring pattern, see the "Run New Module: Value Change" event frame in the API Tester VI for this module.
+
+The **Validate DQMH Module** tool added a 'Module Name' output to this VI.
+
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Stop Module
+|image:empty.png[empty.png]
+|image:PantherLAB_lib_Message.lvlib_Stop_Module.vi.png[PantherLAB_lib_Message.lvlib:Stop Module.vi]
+|Send the Stop request to the Module's Main.vi. If **Wait for Module to stop?** is TRUE, then this VI will not complete execution until the Module Main VI has stopped running.
+
+**Note:** If the cloneable module is running as singleton, then the 'Wait for Module to stop?' input is ignored... this VI will **always** wait until a cloneable Main VI running as singleton has stopped running.
+
+|image:empty.png[empty.png]
+|image:reentrancy-shared.png[reentrancy-shared.png]
+|image:empty.png[empty.png]
+
+|Show Panel
+|image:request.png[request.png]
+|image:PantherLAB_lib_Message.lvlib_Show_Panel.vi.png[PantherLAB_lib_Message.lvlib:Show Panel.vi]
+|Send the Show Panel request to the Module's Main.vi.
+
+|image:empty.png[empty.png]
+|image:reentrancy-shared.png[reentrancy-shared.png]
+|image:empty.png[empty.png]
+
+|Hide Panel
+|image:request.png[request.png]
+|image:PantherLAB_lib_Message.lvlib_Hide_Panel.vi.png[PantherLAB_lib_Message.lvlib:Hide Panel.vi]
+|Send the Hide Panel request to the Module's Main.vi.
+
+|image:empty.png[empty.png]
+|image:reentrancy-shared.png[reentrancy-shared.png]
+|image:empty.png[empty.png]
+
+|Show Diagram
+|image:request.png[request.png]
+|image:PantherLAB_lib_Message.lvlib_Show_Diagram.vi.png[PantherLAB_lib_Message.lvlib:Show Diagram.vi]
+|This VI tells the Module to show its block diagram to facilitate troubleshooting (add probes, breakpoints, highlight execution, etc).
+
+
+|image:empty.png[empty.png]
+|image:reentrancy-shared.png[reentrancy-shared.png]
+|image:empty.png[empty.png]
+
+|Display Message
+|image:request.png[request.png]
+|image:PantherLAB_lib_Message.lvlib_Display_Message.vi.png[PantherLAB_lib_Message.lvlib:Display Message.vi]
+|Display Message
+
+|image:empty.png[empty.png]
+|image:reentrancy-shared.png[reentrancy-shared.png]
+|image:empty.png[empty.png]
+
+|Draw FP in Subpanel
+|image:request.png[request.png]
+|image:PantherLAB_lib_Message.lvlib_Draw_FP_in_Subpanel.vi.png[PantherLAB_lib_Message.lvlib:Draw FP in Subpanel.vi]
+|Draw FP in Subpanel
+
+|image:empty.png[empty.png]
+|image:reentrancy-shared.png[reentrancy-shared.png]
+|image:empty.png[empty.png]
+
+|Remove from Subpanel
+|image:request.png[request.png]
+|image:PantherLAB_lib_Message.lvlib_Remove_from_Subpanel.vi.png[PantherLAB_lib_Message.lvlib:Remove from Subpanel.vi]
+|Remove from Subpanel
+
+|image:empty.png[empty.png]
+|image:reentrancy-shared.png[reentrancy-shared.png]
+|image:empty.png[empty.png]
+
+|Set Text Font Settings
+|image:request.png[request.png]
+|image:PantherLAB_lib_Message.lvlib_Set_Text_Font_Settings.vi.png[PantherLAB_lib_Message.lvlib:Set Text Font Settings.vi]
+|Set Text Font Settings
+
+|image:empty.png[empty.png]
+|image:reentrancy-shared.png[reentrancy-shared.png]
+|image:empty.png[empty.png]
+
+|Set Text Colors
+|image:request.png[request.png]
+|image:PantherLAB_lib_Message.lvlib_Set_Text_Colors.vi.png[PantherLAB_lib_Message.lvlib:Set Text Colors.vi]
+|Set Text Colors
+
+|image:empty.png[empty.png]
+|image:reentrancy-shared.png[reentrancy-shared.png]
+|image:empty.png[empty.png]
+
+|Set Blinking
+|image:request.png[request.png]
+|image:PantherLAB_lib_Message.lvlib_Set_Blinking.vi.png[PantherLAB_lib_Message.lvlib:Set Blinking.vi]
+|Set Blinking Status
+
+|image:empty.png[empty.png]
+|image:reentrancy-shared.png[reentrancy-shared.png]
+|image:empty.png[empty.png]
+
+|Set Display Style
+|image:request.png[request.png]
+|image:PantherLAB_lib_Message.lvlib_Set_Display_Style.vi.png[PantherLAB_lib_Message.lvlib:Set Display Style.vi]
+|Set Display Style
+
+|image:empty.png[empty.png]
+|image:reentrancy-shared.png[reentrancy-shared.png]
+|image:empty.png[empty.png]
+
+|Module Did Init
+|image:broadcast.png[broadcast.png]
+|image:PantherLAB_lib_Message.lvlib_Module_Did_Init.vi.png[PantherLAB_lib_Message.lvlib:Module Did Init.vi]
+|Send the Module Did Init event to any VI registered to listen to this module's broadcast events.
+
+|image:empty.png[empty.png]
+|image:reentrancy-shared.png[reentrancy-shared.png]
+|image:empty.png[empty.png]
+
+|Status Updated
+|image:broadcast.png[broadcast.png]
+|image:PantherLAB_lib_Message.lvlib_Status_Updated.vi.png[PantherLAB_lib_Message.lvlib:Status Updated.vi]
+|Send the Status Updated event to any VI registered to listen to events from the owning module.
+
+|image:empty.png[empty.png]
+|image:reentrancy-shared.png[reentrancy-shared.png]
+|image:empty.png[empty.png]
+
+|Error Reported
+|image:broadcast.png[broadcast.png]
+|image:PantherLAB_lib_Message.lvlib_Error_Reported.vi.png[PantherLAB_lib_Message.lvlib:Error Reported.vi]
+|Send the Error Reported event to any VI registered to listen to events from the owning module.
+
+|image:empty.png[empty.png]
+|image:reentrancy-shared.png[reentrancy-shared.png]
+|image:empty.png[empty.png]
+
+|Module Did Stop
+|image:broadcast.png[broadcast.png]
+|image:PantherLAB_lib_Message.lvlib_Module_Did_Stop.vi.png[PantherLAB_lib_Message.lvlib:Module Did Stop.vi]
+|Send the Module Did Stop event to any VI registered to listen to this module's broadcast events.
+
+|image:empty.png[empty.png]
+|image:reentrancy-shared.png[reentrancy-shared.png]
+|image:empty.png[empty.png]
+
+|Update Module Execution Status
+|image:broadcast.png[broadcast.png]
+|image:PantherLAB_lib_Message.lvlib_Update_Module_Execution_Status.vi.png[PantherLAB_lib_Message.lvlib:Update Module Execution Status.vi]
+|Fire the Get Module Execution Status request.
+
+|image:empty.png[empty.png]
+|image:reentrancy-shared.png[reentrancy-shared.png]
+|image:empty.png[empty.png]
+|===
+
+**Type**: image:request.png[] -> Request | image:request-and-wait-for-reply.png[] -> Request and Wait for Reply  | image:broadcast.png[] -> Broadcast
+
+**S**cope: image:scope-protected.png[] -> Protected | image:scope-community.png[] -> Community
+
+**R**eentrancy: image:reentrancy-preallocated.png[] -> Preallocated reentrancy | image:reentrancy-shared.png[] -> Shared reentrancy
+
+**I**nlining: image:inlined.png[] -> Inlined
+
+=== Module Start/Stop calls
+
+[graphviz, format="png", align="center"]
+....
+digraph G_939DD750CF084E43B5AD3D4951D734A6 {
+rankdir=LR;
+edge[dir=none color=aliceblue  arrowhead=box arrowtail=box style=filled penwidth=1 fontcolor=black fontsize=12]
+node[color=black shape=box fontcolor=black fontsize=12]
+"0D2BF0ED-10A0-4E37-B8E5-CFCB62135DF5"[label="UI" color=black shape=component fontcolor=black fontsize=12]
+"31980A0E-F661-4542-811B-92C38FF9C43B"[label="Pantherlab_lib_Test Message API" color=skyblue shape=note fontcolor=black fontsize=12]
+"6F4950FB-F410-457F-AE1F-0479AFBB22A3"[label="Stop Module" color=tomato shape=note fontcolor=black fontsize=12]
+"AD0516A6-95EF-40C0-9D8E-C32D25E0B1C9"[label="Start Module" color=yellowgreen shape=note fontcolor=black fontsize=12]
+"C6C97A8A-EDC1-46A4-8733-75B1FF8E2A24"[label="UI" color=black shape=component fontcolor=black fontsize=12]
+"CEBFD875-B4B5-42B0-B2C1-B6CE1A1518E2"[label="Pantherlab_lib_Test Message API" color=skyblue shape=note fontcolor=black fontsize=12]
+"AD0516A6-95EF-40C0-9D8E-C32D25E0B1C9" -> "31980A0E-F661-4542-811B-92C38FF9C43B" [dir=both color=yellowgreen  arrowhead=odot arrowtail=inv style=filled penwidth=1 fontcolor=black fontsize=12];
+"6F4950FB-F410-457F-AE1F-0479AFBB22A3" -> "0D2BF0ED-10A0-4E37-B8E5-CFCB62135DF5" [dir=both color=tomato  arrowhead=odot arrowtail=inv style=dotted penwidth=1 fontcolor=black fontsize=12];
+"6F4950FB-F410-457F-AE1F-0479AFBB22A3" -> "CEBFD875-B4B5-42B0-B2C1-B6CE1A1518E2" [dir=both color=tomato  arrowhead=odot arrowtail=inv style=dotted penwidth=1 fontcolor=black fontsize=12];
+"AD0516A6-95EF-40C0-9D8E-C32D25E0B1C9" -> "C6C97A8A-EDC1-46A4-8733-75B1FF8E2A24" [dir=both color=yellowgreen  arrowhead=odot arrowtail=inv style=filled penwidth=1 fontcolor=black fontsize=12];
+}
+....
+
+.Start and Stop module callers
+[cols="", %autowidth, frame=all, grid=all, stripes=none]
+|===
+|Function |Callers
+
+|Start Module
+|UI.lvlib:Main.vi +
+Pantherlab_lib_Test Message API.vi
+
+|Stop Module
+|UI.lvlib:Main.vi +
+Pantherlab_lib_Test Message API.vi
+|===
+
+=== Module Helper Loops
+
+[NOTE]
+====
+No Helper Loops Found
+====
+
+=== Module custom errors
+
+[TIP]
+====
+Custom errors are added to the module via vi named `*--error.vi`.
+====
+
+Module PantherLAB_lib_Message.lvlib use the following custom errors:
+
+.Custom errors
+[cols="<.<4d,<.<2d,<.<10d", %autowidth, frame=all, grid=all, stripes=none]
+|===
+|Name |Code |Description
+
+|Module Running as Singleton
+|403680
+|The "%s" module is currently running as singleton, but the Start Module VI was called with 'Run as Singleton' specified as FALSE.
+
+|Module Not Stopped
+|403682
+|The Stop Module VI for the %s module timed out while waiting for the module main VI to stop. The module main VI may still be running.
+
+|Module Not Synced
+|403683
+|%s Module was unable to synchronize events.
+
+|Module Not Running
+|403684
+|Not a single instance of "%s" Module running.
+
+|Module Running as Cloneable
+|403685
+|The "%s" module is currently running as cloneable, but the Start Module VI was called with 'Run as Singleton' specified as TRUE.
+
+|Request and Wait for Reply Timeout
+|403686
+|
+
+|Master Reference Not Closed
+|403687
+|The "%s" module cannot be run as singleton because the Master Reference is still open from a prior run as cloneable. If you plan on running this module as both singleton and cloneable, consider changing your Main VI to wire a value of TRUE to the 'Close Master Reference' input of Init Module.vi.
+|===
+
+=== Module Constant VIs
+
+.Constant VIs Found
+[cols="<.<3d,<.<3d,<.<6d", %autowidth, frame=all, grid=all, stripes=none]
+|===
+|VI Name |Data Type |Value
+
+|Module Name--constant.vi
+|["String","String"]
+|[" %d","Message"]
+
+|Module Timeout--constant.vi
+|I32
+|5000
+|===
